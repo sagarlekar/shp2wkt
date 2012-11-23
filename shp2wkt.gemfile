@@ -1,0 +1,17 @@
+Gem::Specification.new do |s|
+  s.name        = "shp2wkt"
+  s.version     = '0.0.0'
+  s.platform    = Gem::Platform::RUBY
+  s.authors     = ["Sagar Arlekar"]
+  s.email       = "sagar.arlekar@gmail.com"
+  s.homepage    = "http://github.com/sagarlekar/shp2wkt"
+  s.summary     = "A utility to convert a shapefile to well-known-text"
+  s.description = "A utility to convert a shapefile to well-known-text"
+  s.files       = Dir['lib/*']
+
+  #s.files            = `git ls-files -- lib/*`.split("\n")
+  #s.files           += %w[README.md]
+  s.rdoc_options     = ["--charset=UTF-8"]
+  s.require_path     = "lib"
+  s.executables << 'shp2wkt'
+end

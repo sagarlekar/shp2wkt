@@ -1,0 +1,13 @@
+#!/usr/bin/env ruby
+$LOAD_PATH.unshift File.dirname(__FILE__) + '/../lib'
+require 'shp2wkt'
+
+if ARGV[0].nil?
+	puts "Usage:"
+	puts "shp2wkt file_name.shp"
+	puts "Result will be written to file_name.txt with one geometry per line."
+else
+	shp2wkt = Shp2Wkt.new(ARGV[0])
+	shp2wkt.write
+end
+
