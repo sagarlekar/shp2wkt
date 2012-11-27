@@ -1,11 +1,27 @@
 #!/usr/bin/env ruby
 $LOAD_PATH.unshift File.dirname(__FILE__) + '/../lib'
 require 'shp2wkt'
+require 'optparse'
+
+options = {}
+
+opt_parser = OptionParser.new do |opt|
+  opt.banner = "Usage: shp2wkt FILENAME"
+  opt.separator  ""
+  opt.separator  "Example"
+  opt.separator  "     shp2wkt /home/gis/india_rivers.shp"
+  opt.separator  "Options"
+
+  opt.on("-h","--help") do
+    puts opt_parser
+  end
+  opt.separator  "" 
+end
+
+opt_parser.parse!
 
 if ARGV[0].nil?
-	puts "Usage:"
-	puts "shp2wkt file_name.shp"
-	puts "Result will be written to file_name.txt with one geometry per line."
+  puts opt_parser
 else
 	shp2wkt = Shp2Wkt.new(ARGV[0])
 	shp2wkt.write
