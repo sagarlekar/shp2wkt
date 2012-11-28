@@ -1,7 +1,7 @@
 shp2wkt
 =======
 
-A utility to convert Shapefile to Text (Well Known Text). Shp2wkt can be used as a command line tools and also as a ruby class.
+A utility to convert Shapefile to Text (Well Known Text). Shp2wkt can be used as a command line tool and also as a ruby class.
 
 ### Usage as a command line itility
 ```
