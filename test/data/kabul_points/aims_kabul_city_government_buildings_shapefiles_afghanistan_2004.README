@@ -1,0 +1,20 @@
+AIMS, Kabul City Government Buildings Shapefiles, Afghanistan, 2004
+
+
+
+    Abstract:
+        Afghanistan Information Management Service (AIMS) using one-meter resolution IKONOS satellite image (2000-2002) at scale 1:5,000 and ground truthing published this layer. There are about 24 bridges in the layer. 
+    Purpose:
+        The bridges layer of Kabul city is the basis for showing the locations for the bridges in Kabul city. This point layer depicts, the location of the bridges as oppose to the actual structure of the bridges. Therefore, this data is useful for simply identifying location of a bridge. 
+
+
+
+Attributes:
+GOVT_TYPE: Government Type - The type of Government this building is used for, i.e. ministry, supreme court. 
+X_COORD: X Coordinate - 
+TYPE_ID: ID Type - not sure
+ID: ID - Identification number
+GOV_NAME: Government Name - Government name of building
+Y_COORD: Y Coordinate - 
+
+exported on Mon Jun 25 13:02:37 -0400 2012

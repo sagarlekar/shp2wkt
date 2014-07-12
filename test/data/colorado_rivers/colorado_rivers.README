@@ -1,0 +1,34 @@
+Colorado Rivers
+
+NOHRCC dataset clipped to Colorado State
+
+Attributes:
+TERMID: Termid - 
+HUC: Huc - 
+RR: Rr - 
+NAME: Name - 
+DOWN_JUNCT: Down Junct - 
+ARC_ID: Arc - 
+TERMINAL_B: Terminal B - 
+PRIMARY_CO: Primary Co - 
+OPEN_WATER: Open Water - 
+MILES_TERM: Miles Term - 
+MAX_Y_AXIS: Max Y Axis - 
+MIN_Y_AXIS: Min Y Axis - 
+MAX_X_AXIS: Max X Axis - 
+MIN_X_AXIS: Min X Axis - 
+DOWN_REACH: Down Reach - 
+TYPE: Type - 
+SEQUENCE_N: Sequence N - 
+SEGMENT_LE: Segment Le - 
+UP_DIRECTI: Up Directi - 
+DSHUC: Dshuc - 
+OPEN_WAT_1: Open Wat 1 - 
+STREAM_LEV: Stream Lev - 
+DIVERGENCE: Divergence - 
+PRIMARY_NA: Primary Na - 
+SUM_DRAIN_: Sum Drain  - 
+ARC_STATUS: Arc Status - 
+ARC_IDENTI: Arc Identi - 
+
+exported on Fri Nov 09 10:23:24 -0500 2012
