@@ -18,7 +18,6 @@ module Shp2Wkt
       # absolute path to the shapefile e.g. /home/user/roads.shp
       @filename = filename
       read
-      write
     end
 
     # Will read the shapefile in @filename and convert each geometry in text_geom array as text.
