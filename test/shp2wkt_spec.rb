@@ -1,29 +1,29 @@
 require 'rspec'
-require '../lib/shp2wkt'
+require 'shp2wkt'
+
+puts "NOTE: Test should be run from project home directory"
 
 describe Shp2Wkt do
 
-	before(:all) do
+  before(:all) do
 
-	end
+    @file_points = "./test/data/kabul_points/aims_kabul_city_government_buildings_shapefiles_afghanistan_2004.shp"
+    @file_lines = "./test/data/colorado_rivers/colorado_rivers.shp"
+    @file_polygons = "./test/data/usa_states/usa_states.shp"
+  end
 
-	it "converts a shapefile with points into wkt" do
-	    file = "/home/sagar/Downloads/kabul_shapefile/kabul_poi.shp"
-		shp2wkt = Shp2Wkt.new(file)
-		shp2wkt.write.should == 119
-    end
+  it "converts a shapefile with points into wkt" do
+    shp2wkt = Shp2Wkt::Shp2Wkt.new(@file_points)
+    shp2wkt.write.should == 41
+  end
 
-	it "converts a shapefile with lines into wkt" do
-		file = "/home/sagar/Downloads/kabul_shapefile/kabul_highway.shp"
-		shp2wkt = Shp2Wkt.new(file)
-		shp2wkt.write.should == 4955
+  it "converts a shapefile with lines into wkt" do
+    shp2wkt = Shp2Wkt::Shp2Wkt.new(@file_lines)
+    shp2wkt.write.should == 99
+  end
 
-    end
-
-	it "converts a shapefile of polygons into wkt" do		
-		file = "/home/sagar/Downloads/kabul_shapefile/kabul_natural.shp"
-		shp2wkt = Shp2Wkt.new(file)
-		shp2wkt.write.should == 7 	
-
-    end
+  it "converts a shapefile of polygons into wkt" do
+    shp2wkt = Shp2Wkt::Shp2Wkt.new(@file_polygons)
+    shp2wkt.write.should == 51
+  end
 end
