@@ -23,7 +23,6 @@ module Shp2Wkt
     # Will read the shapefile in @filename and convert each geometry in text_geom array as text.
     def read
       @text_geom = []
-
       RGeo::Shapefile::Reader.open(@filename) do |file|
 
         file.each do |record|

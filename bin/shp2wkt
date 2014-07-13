@@ -23,7 +23,7 @@ opt_parser.parse!
 if ARGV[0].nil?
   puts opt_parser
 else
-	shp2wkt = Shp2Wkt.new(ARGV[0])
+	shp2wkt = Shp2Wkt::Shp2Wkt.new(ARGV[0])
 	shp2wkt.write
 end
 
